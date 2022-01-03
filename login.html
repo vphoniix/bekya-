@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 16px;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style/login.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="btn-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                <button type="button" class="toggle-btn" onclick="signup()">Signup</button>
+            </div>
+            <form class="inputs" id="login">
+                <input type="email" class="input-field" placeholder="Email" required>
+                <input type="password" class="input-field" placeholder="Password" required>
+                <input type="checkbox" class="check-box">
+                <span>Remember Password</span> 
+                <button type="submit" class="sub-btn">Login</button>
+                <a href="#password recovry" class="recovery"> forgot password?</a>
+            </form>
+            <form class="inputs" id="signup">
+                <input type="text" class="input-field" placeholder="First Name" required>
+                <input type="text" class="input-field" placeholder="Last Name" required>
+                <input type="email" class="input-field" placeholder="Email" required>
+                <input type="tel" class="input-field" placeholder="Phone Number" required>
+                <input type="text" class="input-field" placeholder="Address" required>
+                <input type="password" class="input-field" placeholder="Password" required>
+                <input type="checkbox" class="check-box">
+                <span>I accept the  <a href="#terms"> terms &amp; conditions</a></span>
+                <button type="submit" class="sub-btn">Signup</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        var x = document.getElementById("login")
+        var y = document.getElementById("signup")
+        var z = document.getElementById("btn")
+
+        function signup() {
+            x.style.left = "-400px"
+            y.style.left = "50px"
+            z.style.left = "110px"
+        }
+        function login() {
+            x.style.left = "50px"
+            y.style.left = "450px"
+            z.style.left = "0px"
+        }
+    </script>
+</body>
+
+</html>

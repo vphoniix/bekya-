@@ -1,0 +1,29 @@
+footer{
+    position: relative;
+    width: 100%;
+    padding: 40px 10vw;
+    padding-bottom: 80px;
+    background: #383838;
+}
+
+.f-contet{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.f-contet .logo{
+    height: 160px;
+}
+
+.social-icons {
+    margin-top: 20px;
+    /* margin-right: 200px; */
+}
+
+.social-icons a{
+    color: #fff;
+    font-size: 30px;
+    margin-left: 10px;
+}
+

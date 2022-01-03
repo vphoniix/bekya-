@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url(header.css);
+@import url(footer.css);
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.product{
+    position: relative;
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+.pro-category{
+    padding: 0 10vw;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+}
+
+.pro-container{
+    padding: 0 10vw;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+
+.pro-card{
+    flex: 0 0 auto;
+    width: 250px;
+    height: 450px;
+    margin-right: 40px;
+}
+
+.pro-image{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.pro-thumb{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.card-btn{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    width: 90%;
+    border: none;
+    outline: none;
+    background: #f2efe9;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.pro-card:hover .card-btn{
+    opacity: 1;
+}
+
+.card-btn:hover{
+    font-size: 16px;
+    color: #fff;
+    background: #6fa66f;
+}
+
+.pro-info{
+    width: 100%;
+    height: 100px;
+    padding-top: 10px;
+}
+
+.pro-info a{
+    text-decoration: none;
+    color: #000;
+}
+
+.pro-info a:hover{
+    text-decoration: blue underline;
+    color: blue;
+}
+
+.pro-cate-mat{
+    text-transform: uppercase;
+}
+
+.pro-des{
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    opacity: 0.6;
+    margin: 5px 0;
+}
+
+.price{
+    font-weight: 700;
+    font-size: 15px;
+    
+}
